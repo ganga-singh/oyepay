@@ -1,0 +1,680 @@
+body {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+}
+
+.sidebar a:active{
+  text-decoration: none;
+}
+
+.main{
+    margin-left: 200px;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo{
+    width: 140px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.logo_mobile{
+    width: 140px;
+    margin-top: 5px;
+    margin-left: 0px;
+}
+.title{
+    margin-top: 20px;
+    font-family: 'Helvetica';
+    font-size: 28px;
+    font-weight: lighter;
+    color:#0f7298;
+}
+#search{
+    padding: 15px 10px;
+    line-height: 25px;
+    font-size: 15px;
+    width: 600px;
+    margin-left: 80px;
+    margin-top: 22px;
+    border: none;
+  border-bottom: 2px solid #ebe5d5;
+    
+}
+.input_details{
+    padding: 15px 10px;
+    line-height: 25px;
+    font-size: 20px;
+    margin-left: 40px;
+    width: 250px !important;
+    height: 35px !important;
+    border: none;
+    border-bottom: 2px solid #ebe5d5;
+    
+}
+
+.input_mob{
+    padding: 15px 10px;
+    line-height: 25px;
+    font-size: 20px;
+    width: 450px !important;
+    height: 35px !important;
+    border: none;
+    border-bottom: 2px solid #ebe5d5;
+    
+}
+
+.headericons{
+    margin-top: 21px;
+    margin-left: 50px;
+    
+}
+
+/* -------------------------- sidenav ---------------------- */
+
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 240px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 65px; /* Stay at the top */
+  left: 0;
+  background-color:#0f7298 ; /* Black */
+  padding-top: 10px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+
+.headertext{
+    font-family: 'Helvetica';
+    font-size: 18px;
+    margin-left: 5px;
+    margin-right: 20px;
+    font-weight: lighter;
+    color:#0f7298;
+}
+
+
+.rowtop{
+  height: 70px;
+}
+.left{
+    background: #0f7298;
+    height: 665px;
+    color: #fff;
+    font-size: 15px;
+    
+}
+
+
+#dth_rchg, #pay_mob, #dth_rchg_mobile, #pay_mob_mobile, #change_pass, #mob_change_pass, #passLogin, #signUpPage {
+    display: none;
+}
+
+.sidebaricons{
+    width: 27px;
+}
+
+
+.rightpanels{
+    width: 1024px;
+    margin-top: 30px;
+    padding-top: 3px;
+    margin-left: 7%;
+    height: 330px;
+    background: #f7f7f7;
+    z-index: 1;
+    border-radius: 2px;
+}
+
+
+
+.recharge_options{
+    
+
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.recharge_options img{
+    
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.recharge_options p{
+ color: #3a7287;
+ font-weight: bold;
+ font-size: 12px;
+ text-align: center;    
+}
+
+.quickrechargeimg{
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.comissions{
+    font-size: 10px;
+    text-align: center;
+    font-weight: normal;
+    color: grey;
+    margin-left: 30px;
+}
+
+
+
+.btn-circle.btn-xl {
+    margin-left: 20px;
+    width: 45px;
+    height: 40px;
+    border-radius: 35px;
+    font-size: 12px;
+  
+   
+}
+
+/* -------------------------- mobile sidebar ----------------------- */
+
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: #0f7298; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    opacity: 1;
+}
+
+/* The navigation menu links */
+.sidebar a {
+    padding: 8px 8px 8px 0px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+}
+
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 36px;
+    margin-right: 10px;
+    padding-left: 0;
+    background-color: #0f7298 ;
+    color: #fff;
+    width: 10%;
+    margin-bottom: 5px;
+}
+
+
+
+.dropdown-container {
+  display: none;
+  width: 100%;
+}
+
+.dropdown-btn{
+    border: 0 !important;
+}
+
+/* ---------------------menu wrapper----------------------- */
+
+#menuwrapper ul, #menuwrapper ul li{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+#menuwrapper ul li{
+   
+    background-color:#0f7298;
+    width:240px;
+    cursor:pointer;
+    color: #fff;
+    font-size: 18px;
+    z-index: 2;
+}
+
+.sidebar a, .dropdown-btn{
+     background-color:#0f7298;
+     cursor:pointer;
+    color: #fff;
+    font-size: 18px;
+    padding:12px 22px;
+     text-decoration:none;
+     width: 100%;
+
+}
+
+#menuwrapper ul li:hover{
+    position:relative;
+    border-radius: 10px;
+    background-color: #15a0d6;
+   
+}
+
+.sidebar a:hover{
+     background-color:#0f7298;
+
+}
+
+
+#menuwrapper ul li a{
+    padding:12px 22px;
+    color:#ffffff;
+    display:inline-block;
+    text-decoration:none;
+    font-size: 15px;
+}
+
+
+#menuwrapper ul li ul{
+    position:absolute;
+    display:none;
+    text-align: center;
+
+    
+}
+
+
+
+#menuwrapper ul li:hover ul{
+    left:240px;
+    top: 0;
+    display:block;
+    
+  
+}
+
+#menuwrapper ul li ul li{
+    background-color: #15a0d6;
+  
+   font-size: 15px;
+}
+
+
+#menuwrapper ul li:hover ul li:hover{
+    background-color:#cccccc;
+
+     
+}
+
+#menuwrapper ul li ul li a{
+    color:#fff;
+    display:inline-block;
+    width:180px;
+}
+
+#menuwrapper ul li:hover ul li:hover a{
+   color: black;
+}
+
+
+
+
+.search_form{
+    margin-left: 3rem;
+}
+
+#search_mob{
+    border-top: 0; 
+    border-left: 0; 
+    border-right: 0; 
+    width: 300px; 
+    margin-left: 15px;
+}
+
+
+
+
+/* -----------------RESPONSIVE ---------------------- */
+
+@media only screen and (max-width: 600px) {
+
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+
+  .logo_mobile{
+    width: 120px;
+  }
+
+  #hamburger img{
+    width: 25px;
+  }
+.search_form{
+    margin-left: 0 !important;
+}
+
+#search_mob{
+    width: 200px !important;
+}
+
+
+
+#mySidebar p{
+    left: 27% !important;
+}
+
+.rupee img{
+    width: 30px;
+}
+
+.rupee p{
+    font-size: 10px;
+}
+
+.passbook img{
+    width: 43px;
+}
+
+.passbook p{
+    font-size: 10px;
+}
+
+.commission img{
+    width: 41px;
+}
+
+.commission p{
+    font-size: 10px;
+}
+
+.recharge_mob img{
+    width: 24px !important;
+}
+
+.recharge_mob p{
+    font-size: 85%;
+}
+
+.recharge_dth img{
+    width: 42px !important;
+
+}
+
+.recharge_dth p{
+    font-size: 85%;
+}
+
+.pay_money img{
+    width: 48px !important;
+
+}
+
+.pay_money p{
+    font-size: 85%;
+}
+
+.more_options img{
+    width: 42px !important;
+
+}
+
+.more_options p{
+    font-size: 85%;
+}
+
+.input_mob{
+    width: 300px !important;
+}
+
+} 
+
+
+@media only screen and (max-width: 420px){
+  #mob_personal_info{
+    text-align: left !important;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (max-width:768px) and (min-width:600px) {
+   .desktop{
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+
+.search_form{
+    margin-left: 0 !important;
+}
+
+} 
+
+@media (max-width:850px) and (min-width:768px) {
+
+    .mobile{
+    display: none;
+  }
+
+.desktop{
+    display: block;
+  }
+
+.search_form{
+    margin-left: 0 !important;
+}
+  
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (max-width:992px) and (min-width:850px) {
+  .mobile{
+    display: none;
+  }
+
+.desktop{
+    display: block;
+  }
+
+.search_form{
+    margin-left: 0 !important;
+}
+
+} 
+
+@media (max-width:1200px) and (min-width:993px){
+
+  .mobile{
+    display: none;
+  }
+
+.desktop{
+    display: block;
+  }
+
+  .search_form{
+    margin-left: 0 !important;
+}
+
+}
+@media (max-width: 1300px) and (min-width: 1200px){
+  .mobile{
+    display: none;
+  }
+
+.desktop{
+    display: block;
+  }
+
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1300px) {
+  .mobile{
+    display: none;
+  }
+
+.desktop{
+    display: block;
+  }
+}
+
+
+/*-------------------- settings page ------------------- */
+
+.pi{
+background-color: #0f7298;
+border-style: solid;
+border-color: #0f7298;
+border-radius: 5px;
+color: white;
+padding: 4px;
+cursor: pointer;
+}
+
+.txt{
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    font-size: 15px;
+    
+}
+.txt2{
+    color: #268bb1;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.logbtn{
+    margin-top: 10px;
+    width: 100px;
+    background-color: #0f7298 !important;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    
+}
+
+.rightpanels_setting{
+    width: 1024px;
+    margin-top: 30px;
+    padding-top: 3px;
+    margin-left: 7%;
+    height: 370px;
+    background: #f7f7f7;
+    z-index: 1;
+    border-radius: 2px;
+}
+
+/* --------------------------- login page --------------------- */
+  #loginDiv{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+
+#loginPage{
+    
+width:850px;
+height: 400px;
+background-color:white;
+position: relative;
+border: 5px solid #0f7298;
+border-radius: 1%;
+left: 35%;
+top: 45%;
+margin-left:-210px;
+margin-top:-158px;
+padding: 3%;
+}
+
+#signUpPage{
+    
+width:850px;
+height: 440px;
+background-color:white;
+position: relative;
+border: 5px solid #0f7298;
+border-radius: 1%;
+left: 35%;
+top: 42%;
+margin-left:-210px;
+margin-top:-158px;
+padding: 3%;
+}
+
+
+.labl{
+  
+   /* margin-left: 30px;*/
+    font-size: 18px;
+    font-weight: lighter;  
+    color: #0f7298;
+    cursor: pointer;
+    
+}
+.labl:hover{
+    opacity: 0.7;
+}
+#hr1{
+    width: 100%;
+    border: 0.5px solid #0f7298;
+    
+}
+.input_login{
+    padding: 15px 10px;
+    line-height: 25px;
+    font-size: 15px;
+    width: 80% !important;
+    margin-top: 25px;
+    border: none;
+  border-bottom: 2px solid #ebe5d5;
+    
+}
+
+.logbtn2{
+ 
+    margin-top: 30px;
+    width: 180px;
+    background-color: #0f7298 !important;
+    
+}
+.baseprb1{
+   
+    color: #808080;
+}
+
